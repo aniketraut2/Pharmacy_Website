@@ -1,0 +1,187 @@
+#header {
+    min-height: 100px;
+    background-color: grey;
+    font-size: 50px;
+    color: white;
+    text-align: right;
+    padding-top: 1%;
+    padding-right: 7%;
+}
+
+#footer {
+    min-height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+}
+
+
+
+#navigate {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.menu {
+    margin: 0%;
+    background-color: rgb(153, 156, 156);
+}
+
+.menu li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#Dropdown_1,
+#Dropdown_2 {
+    position: absolute;
+    width: auto;
+    max-width: 150px;
+    min-width: 140px;
+    display: none;
+    top: 42.5px;
+    background-color: whitesmoke;
+    padding: 0%;
+}
+
+#Dropdown_1 li,
+#Dropdown_2 li {
+    display: block;
+}
+
+#Dropdown_1 li:hover,
+#Dropdown_2 li:hover {
+    background-color: gainsboro;
+}
+
+#Dropdown_1 li a,
+#Dropdown_2 li a {
+    color: steelblue;
+    font-size: 20px;
+}
+
+.menu li:nth-child(2):hover #Dropdown_1,
+.menu li:nth-child(3):hover #Dropdown_2 {
+    display: block;
+}
+
+.animate {
+    border: 2px solid;
+    border-color: steelblue;
+    height: auto;
+    min-height: 400px;
+    animation-name: animImg;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animImg {
+    0% {
+        background-image: url(Images/Animation/ani1.jpg);
+        background-repeat: no-repeat;
+    }
+
+    25% {
+        background-image: url(Images/Animation/ani2.png);
+        background-repeat: no-repeat;
+
+    }
+
+    50% {
+        background-image: url(Images/Animation/ani3.jpg);
+        background-repeat: no-repeat;
+
+    }
+
+    75% {
+        background-image: url(Images/Animation/ani4.jpg);
+        background-repeat: no-repeat;
+
+    }
+
+    100% {
+        background-image: url(Images/Animation/ani5.jpg);
+        background-repeat: no-repeat;
+
+    }
+}
+
+#images {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.alignCentre {
+    background-repeat: no-repeat;
+    /*
+    background-attachment: fixed;
+    */
+    background-position: center;
+}
+
+
+
+.shopping{
+    margin: 10px;
+    
+}
+
+.items{
+    border-radius: 10px;
+    display: inline-block;
+    padding :10px;
+    margin: 15px;
+    background-color: rgb(185, 243, 243);
+    width: 300px;
+    height: 300px;
+    box-shadow: 5px 10px #a49d9d;
+    transition: transform .2s;
+}
+
+.items:hover{
+    transform: scale(1.15);
+}
+
+.items img{
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+.costTxt{
+color: blue;
+}
+
+.addToCart{
+    margin: 10px;
+    border: 1px solid darkblue;
+    background-color: rgb(201, 233, 241);
+    min-height: 30px;
+    min-width: 275px;
+    text-align: center;
+    color: orange;
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+button:focus{
+    background-color:rgb(250, 234, 230) ;
+    border: rgb(0, 255, 76);
+  }
